@@ -17,18 +17,6 @@
     background-color: pink;
 }
 
-/* REGOLE HEADER */
-
-header{
-    background-color: #2c3e50;
-    height: 100px;
-}
-
-header .col-{
-    height: 70px;
-    /* DEBUG */
-}
-
 /* colori */
 
 .red{
@@ -59,31 +47,77 @@ header .col-{
     background-color: #1abc9c;
 }
 
+.white{
+    background-color: #ffffff;
+}
+
+.blue3{
+    background-color: #3a546d;
+}
+
+.blue4{
+    background-color: #2c3e50;
+}
+
+/* REGOLE HEADER */
+
+header{
+    background-color: #2c3e50;
+    height: 100px;
+}
+
+header .col-{
+    height: 70px;
+    /* DEBUG */
+}
+
 /* REGOLE MAIN */
 
 /* REGOLE FIRST LAYOUT START BOOTSTRAP*/
 
-#startbootstrap .picture {
-	min-height: 650px;
-	width: 70%;
-}
-
-#startbootstrap .col-12{
-    display: flex;
-    justify-content: center;
-}
-
-#startbootstrap .col-6{
-    /* debug */
+#startbootstrap .sfondo{
     min-height: 450px;
 }
-
 /* REGOLE SECOND LAYOUT PORTFOLIO*/
 
-#portfolio .picture{
+#portfolio .sfondo{
     min-height: 450px;
     border: white solid 20px;
 }
+
+.picture{
+    width: 100%;
+}
+.sfondo{
+    display: flex;
+}
+
+#portfolio img{
+    width: 100%;
+}
+
+/* REGOLE THREAD LAYOUT ABOUT */
+
+/* REGOLE FOURTH LAYOUT CONTACT ME */
+
+
+
+/* REGOLE FOOTER */
+
+footer{
+    color: white;
+}
+
+/* REGOLE FIFTH LAYOUT LOCATION */
+
+
+ 
+
+
+
+
+
+
 
 
 
