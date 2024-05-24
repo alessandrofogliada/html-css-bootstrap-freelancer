@@ -11,16 +11,23 @@
 
     <!-- Intestazione pagina -->
 
- <div class=".container-sm text-center">    
-    <header>
-            <div class="row align-items-center justify-content-between ">
+ <div class=".container .container-sm .container-md .container-lg text-center">    
+    <header  class="row align-items-center justify-content-between justify-content-md-around justify-content-lg-around ">
                <div class="col-3">
                 startbootstrap
                </div>
-               <div class="col-3">
+               <div class="col-3 hamburger">
                 hamburger
                </div>
-            </div>  
+
+               <!-- menu per versione tablet e desktop -->
+               <div class="col-3 menu">
+                <nav>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </nav>
+               </div>
     </header>
 
     <main>
@@ -28,13 +35,11 @@
         <!-- First layout startbootstrap -->
         <section id="startbootstrap">
             <div class="row">
-                <div class="col-1 offset green"></div>
-                <div class="col-10 green">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, velit. Minima suscipit ab dolore qui eum ducimus incidunt, corrupti, est cum doloribus praesentium eius expedita saepe eligendi quisquam laborum magnam.lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatem sint hic eius dicta laudantium iusto molestias, neque aliquam, aut iure praesentium corporis autem ullam, architecto ea? Perferendis, quas accusamus?</p>
+                <div class="col-12 green">
+                    <img class="picture" src="img/avatar.svg" alt="avatar ragazzo che sorride">
                 <h3>ABOUT</h3>
                 <span>grechina</span>
                 </div>
-                <div class="col-1 offset green"></div>
 
             </div>
         </section>
@@ -42,56 +47,92 @@
 
         <!-- Second layout Portfolio -->
         <section id="portfolio">
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-md-center">
                <h2>Portfolio</h2>
 
-               <div class="sfondo justify-content-center align-items-center red">
+               <div class="sfondo col-md-5 col-lg-3 red">
                    <div class="picture">
-                       <img src="img/cabin.png" alt="">
+                       <img src="img/cabin.png" alt="casa di legno">
                     </div>
                </div>
-               <div class="sfondo justify-content-center align-items-center lightblue"></div>
-               <div class="sfondo justify-content-center align-items-center black"></div>
-               <div class="sfondo justify-content-center align-items-center blue"></div>
-               <div class="sfondo justify-content-center align-items-center blue2"></div>
-               <div class="sfondo justify-content-center align-items-center brown"></div>
-             </div>
-        </section>
+
+               <div class="offset-md-1"></div>
+
+               <div class="sfondo col-md-5 col-lg-3 red">
+                   <div class="picture">
+                       <img src="img/cabin.png" alt="casa di legno">
+                    </div>
+               </div>
+               
+
+               <div class="sfondo col-md-5 col-lg-3 red">
+                   <div class="picture">
+                       <img src="img/cabin.png" alt="casa di legno">
+                    </div>
+               </div>
+
+               <div class="offset-lg-4"></div>
+               
+               <div class="sfondo col-md-5 col-lg-3 red">
+                   <div class="picture">
+                       <img src="img/cabin.png" alt="casa di legno">
+                    </div>
+               </div>
+
+
+               <div class="sfondo col-md-5 col-lg-3 red">
+                   <div class="picture">
+                       <img src="img/cabin.png" alt="casa di legno">
+                    </div>
+               </div>
+
+               <div class="sfondo col-md-5 col-lg-3 red">
+                   <div class="picture">
+                       <img src="img/cabin.png" alt="casa di legno">
+                    </div>
+               </div>
+
 
 
         <!--Thread Layout About -->
 
         <section id="about" class="green">
             <div class="row justify-content-center">
-                <div class="col-2 offset"></div>
-                <div class="col-8">
+                <div class="offset-sm-3 offset-md-2 white"></div>
+                <div class="col-6 col-md-8">
                 <h3>ABOUT</h3>
                 <span>grechina</span>
+                <div class="d-md-flex">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ex? Maiores eligendi sequi voluptatibus sint architecto illo voluptatem quisquam esse magni totam tempora sapiente, sit corrupti vero ipsam! Inventore, recusandae!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate adipisci velit aut nostrum, praesentium optio odit, libero provident eaque saepe impedit error autem. Nam, obcaecati! Recusandae dolore commodi quasi rerum?</p>
+                </div>
                 <a href="">Dowland</a>
                 </div>
-                <div class="col-2 offset"></div>
+                <div class="offset-sm-3 offset-md-2 white"></div>
             </div>
         </section>
 
         <!-- Fourth Layout Contact me -->
 
         <section id="contactme">
-            <div class="row">
-                <div class="col-2 offset white"></div>
-                <div class="col-8 white">
+            <div class="row justify-content-center">
+                <div class="offset-sm-3 offset-md-2 white"></div>
+                <div class="col-6 col-md-8 white">
                     <h2>CONTACT ME</h2>
                     <span>grechine</span>
-                    <ul>
+                    <ul class="text-start">
                         <li>name</li>
+                        <div class="grey"></div>
                         <li>name</li>
+                        <div class="grey"></div>
                         <li>name</li>
+                        <div class="grey"></div>
                         <li>name</li>
+                        <div class="grey"></div>
                     </ul>
                     <a href="">Send</a>
                 </div>
-                <div class="col-2 offset white"></div>
+                <div class="offset-sm-3 offset-md-2 white"></div>
             </div>
 
 
@@ -105,12 +146,20 @@
         <section id="location">
             <div class="row">
                 <div class="col-1 offset blue3"></div>
-                <div class="col-10 blue3">
+                <div class="col-10 blue3 d-md-flex justify-content-between">
+                    <div>
                     <h4>LOCATION</h4>
                     <span>2215 John Daniel</span>
-                    <br>
+                    <span>2215 John Daniel</span>
+                </div>
+                <div>
                     <span>Around</span>
+                    <a href=""></a><a href=""></a><a href=""></a><a href=""></a>
+                </div>
+                <div>
                     <span>Freelence</span>
+                </div>
+                   
                 </div>
                 <div class="col-1 offset blue3"></div>
             </div>
