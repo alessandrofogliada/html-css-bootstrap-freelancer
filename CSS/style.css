@@ -8,7 +8,12 @@
 
 [class*="col"]{
     /* debug */
-    background-color: pink;
+    min-height: 40px;
+    /* background-color: pink; */
+}
+
+body{
+    font-size: 23px;
 }
 
 
@@ -46,6 +51,11 @@
     background-color: #ffffff;
 }
 
+.bianco{
+    color: white;
+    text-decoration: none;
+}
+
 .blue3{
     background-color: #3a546d;
 }
@@ -66,12 +76,26 @@ header{
     height: 100px;
 }
 
-.hamburger{
-    display: inline-block;
-}
-
 .menu{
     display: none;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+        height: auto;
+        width: 58%;
+        border: solid white 2px;
+        border-radius: 5px;
+}
+
+.hamburger i{
+    color: grey;
 }
 
 /* REGOLE MAIN */
@@ -86,14 +110,58 @@ header{
     min-height: 450px;
 }
 
-#startbootstrap img{
-    width: 60%;
+#startbootstrap img {
+	width: 75%;
+	margin: 36px 0 22px;
 }
+
+#startbootstrap h2{
+    font-size: 42px;
+}
+
+#startbootstrap div span{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+#startbootstrap .green{
+    padding-bottom: 25px;
+}
+
+.greca .white{
+	display: inline-block;
+	height: 5px;
+	width: 83px;
+	border-radius: 50px;
+}
+
+
+.greca .black{
+	display: inline-block;
+	height: 5px;
+	width: 83px;
+	border-radius: 50px;
+    margin-bottom: 6px;
+}
+
+
 /* REGOLE SECOND LAYOUT PORTFOLIO*/
+#portfolio{
+        margin: 50px 0;
+}
 
 #portfolio .sfondo{
     min-height: 450px;
     border: white solid 20px;
+    border-radius: 30px;
+}
+
+#portfolio h2{
+    font-size: 35px;
+}
+
+#portfolio .greca{
+    margin-bottom: 10px;
 }
 
 .sfondo{
@@ -104,10 +172,52 @@ header{
     width: 100%;
 }
 
+
 /* REGOLE THREAD LAYOUT ABOUT */
+
+#about{
+    color: white;
+    padding-bottom: 50px;
+}
+
+#about h3 {
+	margin-top: 43px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#about .greca .white{
+    margin-bottom: 6px;
+    width: 44px;
+}
+
+#about .greca {
+    margin-bottom: 18px;
+}
+
+.button {
+	text-decoration: none;
+	color: white;
+	border: white solid 2px;
+	border-radius: 10px;
+	width: 57%;
+	height: 42px;
+    margin-top: 20px;
+}
+
+.button i , a{ 
+    color: white;
+}
+
+.button i{
+    padding-right: 5px;
+}
 
 /* REGOLE FOURTH LAYOUT CONTACT ME */
 
+#contactme h2{
+    margin: 40px 0 20px;
+}
 #contactme li{
     list-style-type: none;
 }
@@ -117,6 +227,17 @@ header{
     height: 2px;
 }
 
+#contactme i{
+    font-size: 36px;
+}
+
+#contactme .greca .black {
+	display: inline-block;
+	height: 5px;
+	width: 50px;
+	border-radius: 50px;
+	margin-bottom: 6px;
+}
 
 
 /* REGOLE FOOTER */
@@ -127,6 +248,32 @@ footer{
 
 /* REGOLE FIFTH LAYOUT LOCATION */
 
+#location h4{
+    margin-top: 65px;
+}
+
+.circle {
+	width: 50px;
+	height: 41px;
+	border: 2px white solid;
+	border-radius: 20px;
+}
+
+.evidenziato{
+    color: green;
+}
+
+.aboutfreelancer{
+    margin-bottom: 65px;
+}
+
+/* REGOLE SIXTH LAYOUT COPYRIGHT */
+
+#copyright h5{
+        font-size: 1.25rem;
+        height: 100px;
+        margin-top: 70px;
+}
 
 
 /* REGOLE RESPONSIVE */
@@ -141,16 +288,18 @@ footer{
 
     .menu{
         display: inline-block;
-        background-color: #ba4b63;
-        height: 26%;
+    }
+
+    .menu a{
+        padding-right: 15px;
     }
 
     .hamburger{
         display: none;
     }
 
-    header{
-        justify-content: space-around;
+    .fa-bars{
+        display: none;
     }
 
     /* REGOLE MAIN */
@@ -174,7 +323,6 @@ footer{
 @media all and (min-width:992px) {
 
 
-    
 }
 
 
